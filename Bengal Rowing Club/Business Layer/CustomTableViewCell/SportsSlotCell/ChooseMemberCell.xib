@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ChooseMemberCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYB-ju-QQN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQv-R1-h9V">
+                                <rect key="frame" x="5" y="5" width="310" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dQv-R1-h9V" secondAttribute="trailing" constant="5" id="7SJ-bE-TXn"/>
+                            <constraint firstItem="dQv-R1-h9V" firstAttribute="leading" secondItem="GYB-ju-QQN" secondAttribute="leading" constant="5" id="V2s-mK-0CV"/>
+                            <constraint firstItem="dQv-R1-h9V" firstAttribute="top" secondItem="GYB-ju-QQN" secondAttribute="top" constant="5" id="Yh1-fP-G6B"/>
+                            <constraint firstAttribute="bottom" secondItem="dQv-R1-h9V" secondAttribute="bottom" constant="5" id="vk4-Y7-Csh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="GYB-ju-QQN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GdD-KJ-t80"/>
+                    <constraint firstAttribute="trailing" secondItem="GYB-ju-QQN" secondAttribute="trailing" id="NsJ-8R-WBv"/>
+                    <constraint firstItem="GYB-ju-QQN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="b7A-g1-loY"/>
+                    <constraint firstAttribute="bottom" secondItem="GYB-ju-QQN" secondAttribute="bottom" id="qo8-yA-UXd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btn_Member" destination="dQv-R1-h9V" id="dey-SA-GYL"/>
+                <outlet property="vw_member" destination="GYB-ju-QQN" id="hHg-bU-3sc"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="113"/>
+        </tableViewCell>
+    </objects>
+</document>

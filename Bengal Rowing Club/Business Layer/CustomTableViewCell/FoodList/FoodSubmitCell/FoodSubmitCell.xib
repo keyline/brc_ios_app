@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodSubmitCell" id="KGk-i7-Jjw" customClass="FoodSubmitCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biB-ka-uXG">
+                        <rect key="frame" x="10" y="15" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Mj4-Bn-eWR"/>
+                            <constraint firstAttribute="width" constant="20" id="TzN-SN-7I3"/>
+                        </constraints>
+                        <state key="normal" image="untick"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGD-VM-gwa">
+                        <rect key="frame" x="37" y="15" width="275" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="zjH-eW-pGh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <state key="normal" title="I accept the Terms and Conditions">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7E-VB-ErN">
+                        <rect key="frame" x="0.0" y="50" width="320" height="50"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="7Mq-in-ibK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
+                        <state key="normal" title="HOME DELIVERY"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTy-3f-3Tr">
+                        <rect key="frame" x="0.0" y="110" width="320" height="50"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="dsp-St-xXY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
+                        <state key="normal" title="TAKE AWAY"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zTy-3f-3Tr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0AD-UB-CIz"/>
+                    <constraint firstAttribute="trailing" secondItem="p7E-VB-ErN" secondAttribute="trailing" id="1Li-mp-bAT"/>
+                    <constraint firstItem="biB-ka-uXG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ccw-nf-lRD"/>
+                    <constraint firstItem="p7E-VB-ErN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KLN-e3-7SP"/>
+                    <constraint firstAttribute="trailing" secondItem="WGD-VM-gwa" secondAttribute="trailing" constant="8" id="M7S-fh-kPA"/>
+                    <constraint firstAttribute="bottom" secondItem="zTy-3f-3Tr" secondAttribute="bottom" id="YqV-HN-3o1"/>
+                    <constraint firstItem="biB-ka-uXG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ZQj-Mj-CrP"/>
+                    <constraint firstItem="WGD-VM-gwa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ZYK-U2-BGp"/>
+                    <constraint firstAttribute="trailing" secondItem="zTy-3f-3Tr" secondAttribute="trailing" id="cna-u0-yJg"/>
+                    <constraint firstItem="WGD-VM-gwa" firstAttribute="leading" secondItem="biB-ka-uXG" secondAttribute="trailing" constant="7" id="usG-H3-SGm"/>
+                    <constraint firstItem="p7E-VB-ErN" firstAttribute="top" secondItem="biB-ka-uXG" secondAttribute="bottom" constant="15" id="yWp-wW-5at"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btn_AcceptTerms" destination="WGD-VM-gwa" id="48D-Vf-LDb"/>
+                <outlet property="btn_HomeDelivary" destination="p7E-VB-ErN" id="MFW-b7-Wn9"/>
+                <outlet property="btn_TakeAway" destination="zTy-3f-3Tr" id="vGJ-gu-rKw"/>
+                <outlet property="btn_Tick" destination="biB-ka-uXG" id="TEO-kC-VD7"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="105"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="untick" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "5f3b3354-64b3-3043-89ca-0390950d4fe1++4220" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5f3b3354-64b3-3043-89ca-0390950d4fe1++4220" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D5F6A15C-AB30-4B74-B13B-E4ED58A3D3F1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5f3b3354-64b3-3043-89ca-0390950d4fe1++4220" : "Tolly%20Tee%20off\/Tolly%20Tee%20off\/Business%20Layer\/CustomClass\/Parsers\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Tolly Tee off",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Tolly Tee off.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/115.254.65.83:10001\/svn\/JumiaJumble_MA-796",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5f3b3354-64b3-3043-89ca-0390950d4fe1++4220"
+    }
+  ]
+}

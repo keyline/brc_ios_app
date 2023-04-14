@@ -1,0 +1,42 @@
+//
+//  ParserHelper.m
+//  DescribeSomething
+//
+//  Created by Apple on 13/06/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#import "ParserHelper.h"
+
+@implementation ParserHelper
+@synthesize currentElementValue;
+
+
+- (ParserHelper *) initXMLParser{
+    [super init];
+    currentElementValue = nil;
+    return self;
+}
+
+
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qualifiedName attributes:(NSDictionary *)attributeDict
+{ 
+    
+	if([elementName isEqualToString:@"EmailuserRegisterResult"] || [elementName isEqualToString:@"UserLogoutResult"] || [elementName isEqualToString:@"LoginResult"] || [elementName isEqualToString:@"ForgotPasswordResult"] || [elementName isEqualToString:@"UpdateProfileResult"] || [elementName isEqualToString:@"ExistingFbUserListResult"] || [elementName isEqualToString:@"PlayGameResult"] || [elementName isEqualToString:@"GetCurrentGameListResult"] || [elementName isEqualToString:@"CreateGameResult"] || [elementName isEqualToString:@"UpdateGamePlayResult"] || [elementName isEqualToString:@"AcceptRejectPendingGameResult"] || [elementName isEqualToString:@"DeleteGameOverRecordResult"] || [elementName isEqualToString:@"RematchResult"] || [elementName isEqualToString:@"InsertChatResult"] || [elementName isEqualToString:@"DisplayChatResult"] || [elementName isEqualToString:@"ResignGameResult"] || [elementName isEqualToString:@"CouponDetailsResult"])
+        
+		currentElementValue = [[NSMutableString alloc] init];
+}
+
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
+{ 
+    if(currentElementValue) 
+        [currentElementValue appendString:string];
+}
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
+{
+	; 
+}
+
+@end

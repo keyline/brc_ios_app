@@ -1,0 +1,19 @@
+//
+//  ParserHelper.h
+//  DescribeSomething
+//
+//  Created by Apple on 13/06/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface ParserHelper : NSObject<NSXMLParserDelegate>
+{
+    NSMutableString *currentElementValue;
+}
+@property(nonatomic , retain) NSMutableString *currentElementValue;
+
+- (ParserHelper *) initXMLParser;
+
+@end

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DailyVoucherSubmitCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHz-TN-ISa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Credit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xF-r4-jQ8">
+                                <rect key="frame" x="10" y="5" width="75" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8Yu-lG-mGH"/>
+                                    <constraint firstAttribute="width" constant="75" id="xyO-nq-WfH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BF8-HL-bfg">
+                                <rect key="frame" x="90" y="5" width="222" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Jq2-6x-XUG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Debit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBW-xR-8o8">
+                                <rect key="frame" x="10" y="31" width="70" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="LHU-yM-Ux2"/>
+                                    <constraint firstAttribute="height" constant="21" id="Yo1-i8-O9O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hj-gu-HPS">
+                                <rect key="frame" x="85" y="31" width="227" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0zq-5S-SaK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8xF-r4-jQ8" firstAttribute="top" secondItem="sHz-TN-ISa" secondAttribute="top" constant="5" id="8ao-2i-RLw"/>
+                            <constraint firstAttribute="height" constant="60" id="JfF-bZ-Ypm"/>
+                            <constraint firstItem="BF8-HL-bfg" firstAttribute="top" secondItem="sHz-TN-ISa" secondAttribute="top" constant="5" id="M6D-4i-pYI"/>
+                            <constraint firstItem="8xF-r4-jQ8" firstAttribute="leading" secondItem="sHz-TN-ISa" secondAttribute="leading" constant="10" id="Odf-XZ-yBT"/>
+                            <constraint firstItem="BF8-HL-bfg" firstAttribute="leading" secondItem="8xF-r4-jQ8" secondAttribute="trailing" constant="5" id="UHJ-f0-rdJ"/>
+                            <constraint firstItem="2hj-gu-HPS" firstAttribute="top" secondItem="BF8-HL-bfg" secondAttribute="bottom" constant="5" id="elu-Ur-PfL"/>
+                            <constraint firstAttribute="trailing" secondItem="2hj-gu-HPS" secondAttribute="trailing" constant="8" id="hr2-8k-X35"/>
+                            <constraint firstItem="2hj-gu-HPS" firstAttribute="leading" secondItem="IBW-xR-8o8" secondAttribute="trailing" constant="5" id="jAv-0w-aND"/>
+                            <constraint firstItem="IBW-xR-8o8" firstAttribute="leading" secondItem="sHz-TN-ISa" secondAttribute="leading" constant="10" id="rPD-dw-OH2"/>
+                            <constraint firstItem="IBW-xR-8o8" firstAttribute="top" secondItem="8xF-r4-jQ8" secondAttribute="bottom" constant="5" id="sCr-Or-Y4Q"/>
+                            <constraint firstAttribute="trailing" secondItem="BF8-HL-bfg" secondAttribute="trailing" constant="8" id="uNa-hX-DQC"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRf-rM-gey">
+                        <rect key="frame" x="0.0" y="60" width="320" height="40"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="fbS-VU-eBK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
+                        <state key="normal" title="MAKE PAYMENT"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zRf-rM-gey" secondAttribute="trailing" id="8YL-LN-puQ"/>
+                    <constraint firstItem="sHz-TN-ISa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ANB-YD-NiZ"/>
+                    <constraint firstItem="sHz-TN-ISa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BIx-Lp-UHU"/>
+                    <constraint firstItem="zRf-rM-gey" firstAttribute="top" secondItem="sHz-TN-ISa" secondAttribute="bottom" id="DdW-gh-0iN"/>
+                    <constraint firstAttribute="trailing" secondItem="sHz-TN-ISa" secondAttribute="trailing" id="aKg-Ui-Bz4"/>
+                    <constraint firstItem="zRf-rM-gey" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tzW-em-YCY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="btn_makePayment" destination="zRf-rM-gey" id="gqY-xN-yWY"/>
+                <outlet property="lbl_TotalCredit" destination="BF8-HL-bfg" id="cmK-8J-NCA"/>
+                <outlet property="lbl_TotalDebit" destination="2hj-gu-HPS" id="tyB-dJ-KgC"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="129.24107142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
